@@ -15,11 +15,14 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: white,
       leading: const Center(
-        child: RoundIconWidgets(
-          imagePath: 'assets/icons/leading_menu_icon.svg',
-          isSvg: true,
-          isNetwork: false,
-          size: 40,
+        child: Padding(
+          padding: EdgeInsets.only(left: 15),
+          child: RoundIconWidgets(
+            imagePath: 'assets/icons/leading_menu_icon.svg',
+            isSvg: true,
+            isNetwork: false,
+            size: 40,
+          ),
         ),
       ),
       actions: const [

@@ -24,20 +24,23 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: height20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  WelcomeTextSection(),
-                  // Search icon will go here later
+              Padding(
+                padding: EdgeInsets.only(left: 12, right: 12),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    WelcomeTextSection(),
+                    // Search icon will go here later
 
-                  RoundIconWidgets(
-                    imagePath: 'assets/icons/Group_922.svg',
-                    isSvg: true,
-                    isNetwork: false,
-                    size: 40,
-                  )
-                ],
+                    RoundIconWidgets(
+                      imagePath: 'assets/icons/Group_922.svg',
+                      isSvg: true,
+                      isNetwork: false,
+                      size: 65,
+                    )
+                  ],
+                ),
               ),
             ],
           ),

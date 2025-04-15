@@ -12,14 +12,14 @@ class WelcomeTextSection extends StatelessWidget {
       children: [
         AppTextWidget(
           text: 'Welcome, Mypcot !!',
-          fontSize: 18,
+          fontSize: 22,
           fontWeight: FontWeight.bold,
           color: fontColor,
         ),
         SizedBox(height: 4),
         AppTextWidget(
           text: 'here is your dashboard....',
-          fontSize: 13,
+          fontSize: 16,
           fontWeight: FontWeight.w400,
           color: fontColor,
         ),
