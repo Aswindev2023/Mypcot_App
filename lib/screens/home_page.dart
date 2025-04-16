@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:mypcot_app/views/customer_info_section.dart';
+import 'package:mypcot_app/views/order_info_section.dart';
+import 'package:mypcot_app/views/subscription_info_section.dart';
 import 'package:mypcot_app/widgets/home_app_bar.dart';
+import 'package:mypcot_app/widgets/info_tile_wrapper.dart';
 import 'package:mypcot_app/widgets/round_icon_widgets.dart';
+
 import 'package:mypcot_app/widgets/welcome_text_section.dart';
 
 import '../constants/constants.dart';
@@ -31,8 +36,7 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     WelcomeTextSection(),
-                    // Search icon will go here later
-
+                    // Search icon
                     RoundIconWidgets(
                       imagePath: 'assets/icons/Group_922.svg',
                       isSvg: true,
@@ -42,6 +46,22 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: height40,
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                padding: EdgeInsets.symmetric(horizontal: 12),
+                child: Row(
+                  children: [
+                    InfoTileWrapper(child: OrderInfoSection()),
+                    SizedBox(width: 12),
+                    InfoTileWrapper(child: SubscriptionInfoSection()),
+                    SizedBox(width: 12),
+                    InfoTileWrapper(child: CustomerInfoSection()),
+                  ],
+                ),
+              )
             ],
           ),
         ));

@@ -8,6 +8,7 @@ class RoundIconWidgets extends StatelessWidget {
   final double size;
   final bool isSvg;
   final bool isNetwork;
+  final Color backgroundColor;
 
   const RoundIconWidgets({
     super.key,
@@ -15,6 +16,7 @@ class RoundIconWidgets extends StatelessWidget {
     this.size = 36,
     this.isSvg = false,
     this.isNetwork = true,
+    this.backgroundColor = white,
   });
 
   @override
@@ -23,15 +25,17 @@ class RoundIconWidgets extends StatelessWidget {
       width: size,
       height: size,
       child: Container(
-        decoration:
-            BoxDecoration(shape: BoxShape.circle, color: white, boxShadow: [
-          BoxShadow(
-            blurRadius: 8,
-            spreadRadius: 2,
-            color: black.withOpacity(0.1),
-            offset: const Offset(0, 0),
-          )
-        ]),
+        decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: backgroundColor,
+            boxShadow: [
+              BoxShadow(
+                blurRadius: 8,
+                spreadRadius: 2,
+                color: black.withOpacity(0.1),
+                offset: const Offset(0, 0),
+              )
+            ]),
         padding: const EdgeInsets.all(2),
         child: ClipOval(
           child: isSvg
