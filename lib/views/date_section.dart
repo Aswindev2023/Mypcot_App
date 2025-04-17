@@ -58,7 +58,7 @@ class _DateSectionState extends State<DateSection> {
               // Timeline Container
               const DateContainerWidget(
                 width: 140,
-                height: 50,
+                height: 45,
                 radius: 30,
                 child: Align(
                   alignment: Alignment.center,
@@ -93,7 +93,7 @@ class _DateSectionState extends State<DateSection> {
               // Calendar & Text
               DateContainerWidget(
                 width: 120,
-                height: 50,
+                height: 45,
                 radius: 30,
                 child: Align(
                   alignment: Alignment.center,
