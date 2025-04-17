@@ -13,3 +13,4 @@ const purpleRed = Color(0xFFCE316A);
 const lightOrange = Color(0xFFFE804E);
 const white = Color(0xFFFFFFFF);
 const black = Color(0xFF000000);
+const grey = Colors.grey;

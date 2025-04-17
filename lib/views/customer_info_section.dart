@@ -107,7 +107,7 @@ class CustomerInfoSection extends StatelessWidget {
         //Active Customers
         Positioned(
           bottom: 23,
-          right: 70,
+          right: 65,
           child: Stack(
             clipBehavior: Clip.none,
             children: [
@@ -135,7 +135,7 @@ class CustomerInfoSection extends StatelessWidget {
               //User profile Row
               Positioned(
                 bottom: 22,
-                right: -5,
+                right: -9,
                 child: RoundIconWidgets(
                   imagePath:
                       'assets/images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg',
@@ -147,7 +147,7 @@ class CustomerInfoSection extends StatelessWidget {
               ),
               Positioned(
                 bottom: 22,
-                right: -23,
+                right: -28,
                 child: RoundIconWidgets(
                   imagePath:
                       'assets/images/craig-mckay-jmURdhtm7Ng-unsplash.jpg',
@@ -159,7 +159,7 @@ class CustomerInfoSection extends StatelessWidget {
               ),
               Positioned(
                 bottom: 22,
-                right: -40,
+                right: -43,
                 child: RoundIconWidgets(
                   imagePath: 'assets/images/girl_profile.jpg',
                   isNetwork: false,
@@ -174,16 +174,16 @@ class CustomerInfoSection extends StatelessWidget {
         //Subscription button
         Positioned(
           bottom: 25,
-          left: 30,
+          left: 27,
           child: MainInfoBoxWidget(
             backgroundColor: purpleRed,
             width: 140,
-            height: 35,
+            height: 33,
             radius: 13,
             child: Align(
               alignment: Alignment.center,
               child: Padding(
-                padding: EdgeInsets.all(5),
+                padding: EdgeInsets.all(3),
                 child: EnhancedText(
                   defaultColor: white,
                   defaultFontSize: 15,

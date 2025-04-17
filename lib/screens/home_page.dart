@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mypcot_app/views/customer_info_section.dart';
+import 'package:mypcot_app/views/date_section.dart';
 import 'package:mypcot_app/views/order_info_section.dart';
 import 'package:mypcot_app/views/subscription_info_section.dart';
 import 'package:mypcot_app/widgets/home_app_bar.dart';
 import 'package:mypcot_app/widgets/info_tile_wrapper.dart';
 import 'package:mypcot_app/widgets/round_icon_widgets.dart';
-
 import 'package:mypcot_app/widgets/welcome_text_section.dart';
 
 import '../constants/constants.dart';
@@ -61,7 +61,17 @@ class _HomePageState extends State<HomePage> {
                     InfoTileWrapper(child: CustomerInfoSection()),
                   ],
                 ),
-              )
+              ),
+              SizedBox(
+                width: height30,
+              ),
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: DateSection(),
+              ),
+              SizedBox(
+                width: width40,
+              ),
             ],
           ),
         ));

@@ -15,13 +15,6 @@ class GraphCardWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: white,
         borderRadius: BorderRadius.circular(13),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.withOpacity(0.15),
-            blurRadius: 5,
-            offset: const Offset(0, 2),
-          ),
-        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
