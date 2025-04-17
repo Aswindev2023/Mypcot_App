@@ -17,6 +17,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
       leading: const Center(
         child: Padding(
           padding: EdgeInsets.only(left: 15),
+          //Leading menu icon
           child: RoundIconWidgets(
             imagePath: 'assets/icons/leading_menu_icon.svg',
             isSvg: true,
@@ -26,6 +27,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       actions: const [
+        //Favourite icon
         RoundIconWidgets(
           imagePath: 'assets/icons/Group_921.svg',
           isSvg: true,
@@ -33,6 +35,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           size: 40,
         ),
         SizedBox(width: appbarWidth25),
+        //Bell icon with notification indicator
         Stack(
           clipBehavior: Clip.none,
           children: [
@@ -50,6 +53,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
           ],
         ),
         SizedBox(width: appbarWidth25),
+        //Profile section
         RoundIconWidgets(
           imagePath: 'assets/icons/profile_img.jpeg',
           isSvg: false,
