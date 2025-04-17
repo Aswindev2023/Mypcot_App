@@ -6,7 +6,7 @@ class MiniGraphPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     // Line paint
     final linePaint = Paint()
-      ..color = green // your custom green or Colors.green
+      ..color = green
       ..strokeWidth = 2
       ..style = PaintingStyle.stroke;
 
@@ -18,7 +18,7 @@ class MiniGraphPainter extends CustomPainter {
     final path = Path();
     final fillPath = Path();
 
-    // Define points for the graph
+    // Points for the graph
     final points = [
       Offset(0, size.height * 2.5),
       Offset(size.width * 0.18, size.height * 0.5),

@@ -72,7 +72,7 @@ class _DateSectionState extends State<DateSection> {
                           text: 'TIMELINE ',
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
-                          color: fontColor,
+                          color: black,
                         ),
                         SizedBox(
                           width: 5,
@@ -116,7 +116,7 @@ class _DateSectionState extends State<DateSection> {
                           text: 'JAN, 2021 ',
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
-                          color: fontColor,
+                          color: black,
                         ),
                       ],
                     ),
